@@ -12,7 +12,7 @@ public class TeleOp extends LinearOpMode {
 
     double slidePosition = 0.95;
 //    double rightSlidePosition = 0.5;
-    double grabberPosition = 0.2;
+    double grabberPosition = 0.1;
 
     double collectorPower = 0;
     boolean collectorOn = false;
@@ -42,13 +42,13 @@ public class TeleOp extends LinearOpMode {
 
             //collector
             if(gamepad1.right_trigger > collectorPower){
-                collectorPower = (gamepad1.right_trigger > 0.6) ? 0.6 : gamepad1.right_trigger;
+                collectorPower = (gamepad1.right_trigger > 0.85) ? 0.85 : gamepad1.right_trigger;
                 collectorOn = true;
                 grabberPosition = 0.3;
                 updateSlideGrabber();
             }
             if(gamepad2.right_trigger > collectorPower) {
-                collectorPower = (gamepad2.right_trigger > 0.6) ? 0.6 : gamepad2.right_trigger;
+                collectorPower = (gamepad2.right_trigger > 0.85) ? 0.85 : gamepad2.right_trigger;
                 collectorOn = true;
                 grabberPosition = 0.3;
                 updateSlideGrabber();
