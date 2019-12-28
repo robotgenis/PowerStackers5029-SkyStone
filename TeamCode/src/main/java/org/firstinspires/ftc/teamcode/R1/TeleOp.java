@@ -12,7 +12,7 @@ public class TeleOp extends LinearOpMode {
 
     double slidePosition = 0.95;
 //    double rightSlidePosition = 0.5;
-    double grabberPosition = 0.3;
+    double grabberPosition = 0.2;
 
     double collectorPower = 0;
     boolean collectorOn = false;
